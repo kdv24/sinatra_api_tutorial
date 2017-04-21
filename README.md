@@ -8,7 +8,8 @@ with each lesson for lesson-specific setup and instruction.
 
 ## Contents
 
-- **01_hello_sinatra**: Quick and dirty "hello" to Sinatra.
+- **01 - Hello Sinatra**: Quick and dirty "hello" to Sinatra.
+- **02 - Database Setup and Model Creation**: Create/populate database and create the model
 
 ## Prerequisite Steps
 

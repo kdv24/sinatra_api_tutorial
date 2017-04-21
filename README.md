@@ -10,6 +10,7 @@ with each lesson for lesson-specific setup and instruction.
 
 - **01 - Hello Sinatra**: Quick and dirty "hello" to Sinatra.
 - **02 - Database Setup and Model Creation**: Create/populate database and create the model
+- **03 - First API Endpoint**: The `GET` Endpoint for your API is born
 
 ## Prerequisite Steps
 

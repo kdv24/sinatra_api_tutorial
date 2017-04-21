@@ -9,7 +9,7 @@ Here we're going to setup a database and create our model.
 ### Initial Steps
 
 1. Kill your sinatra app from the previous step if you still have it running
-1. `cd` into the `02_hello_sinatra` lesson directory
+1. `cd` into the `02_db_setup_and_model` lesson directory
 
 ### Create Model and Database
 

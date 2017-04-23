@@ -5,7 +5,7 @@
 Serialization is the process of converting an object (in this case, a Ruby
 object) into a plain text string of some sort (in this case, JSON).  This allows
 you to do things like store the object's data in a database, or send it over a
-network. There may also be times when you only want to some of the data, and/or
+network. There may also be times when you only want some of the data, and/or
 you want that data to be in a particular format.  Serializers fulfill that role.
 
 ## Cheet Sheet

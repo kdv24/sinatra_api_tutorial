@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is how I start my Sinatra apps.  I use the [shotgun](https://github.com/rtomayko/shotgun) gem to auto-reload my application in the browser as I make changes to the code base.  Though it isn't really necessary, it does make iterating on things quick and easy.
+This is how I start my Sinatra apps.  I use the [shotgun](https://github.com/rtomayko/shotgun) gem to auto-reload my application in the browser as I make changes to the code base.  Though it isn't really necessary, it does make iterating on things quick and easy. To use shotgun, just `gem install shotgun`
 
 ## Cheet Sheet
 

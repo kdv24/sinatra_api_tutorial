@@ -33,7 +33,13 @@ namespace '/api/v1' do
   end
 
   get '/friends' do
-    Friend.all.to_json
+    friends = Friend.all
+
+    [:id, :first_name, :last_name, :phone].each do |filter|
+      friends = friends.send(filter, params[filter]) if params[filter]
+    end
+
+    friends.to_json
   end
 
 end

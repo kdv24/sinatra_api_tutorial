@@ -12,6 +12,11 @@ require 'shotgun'
 require './lib/friend'
 
 #
+# Serializers
+#
+require './serializers/friend_serializer'
+
+#
 # Database
 #
 set :database_file, 'config/database.yml'
@@ -33,7 +38,13 @@ namespace '/api/v1' do
   end
 
   get '/friends' do
-    Friend.all.to_json
+    friends = Friend.all
+
+    [:id, :first_name, :last_name, :phone].each do |filter|
+      friends = friends.send(filter, params[filter]) if params[filter]
+    end
+
+    friends.map { |friend| FriendSerializer.new(friend) }.to_json
   end
 
 end

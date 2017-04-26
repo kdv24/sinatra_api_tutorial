@@ -16,6 +16,10 @@ Here we're going to setup a database and create our model.
 1. Create a `lib` directory and your `Friend` class in `lib/friend.rb`
 1. Create a `config` directory and `config/database.yml` file
 1. Create a `Rakefile`
+1. Modify your `app.rb` file to require Active Record, your new friend.rb file, and to set the database file:
+- `require 'sinatra/activerecord'`
+- `require './lib/friend'`
+- `set :database_file, 'config/database.yml'`
 1. Create the database for your data to live in: `$ rake db:create`
 1. Run `rake db:create_migration NAME=create_friends`
 1. Modify your newly created migration and run `$ rake db:migrate`

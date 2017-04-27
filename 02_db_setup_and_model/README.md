@@ -30,7 +30,6 @@ Here we're going to setup a database and create our model.
 You aren't going to see anything in the browser just yet, but you can still
 check things out in the database to make sure everything looks right.
 
-1. `$ psql`
-1. `<user>=# \c ltnf`
+1. `$ psql ltnf`
 1. `ltnf=# \d friends`
 1. `ltnf=# SELECT * FROM friends;`

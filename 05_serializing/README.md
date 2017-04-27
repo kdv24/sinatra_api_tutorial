@@ -12,5 +12,10 @@ you want that data to be in a particular format.  Serializers fulfill that role.
 
 1. Kill your sinatra app from the previous step if you still have it running
 1. `cd` into the `05_serializing` lesson directory
+1. In your `app.rb`:
+- require the serializer: `require './serializers/friend_serializer'`,
+- in your `/friends` route, map through friends and add a `FriendSerializer`
+1. Create a `serializer` directory with a `friend_serializer.rb` file
+1. In the `friend_serializer.rb` file, create a new FriendSerializer class and initialize and define what your json should look like
 1. `$ shotgun app.rb` and navigate to `localhost:9393/api/v1/friends` in your browser
 1. Note that the friend objects look slightly different from before

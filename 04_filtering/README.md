@@ -14,6 +14,5 @@ friends we want (in this case, based on first/last name, and phone number).
 last_name, and phone
 1. Add scope to your `Friend` Class so that you can filter based on the params
 specified in the previous step
-1. Require Sinatra namespace `require 'sinatra/namespace'
-`
+1. Require Sinatra namespace `require 'sinatra/namespace'`
 1. `$ shotgun app.rb` and navigate to `localhost:9393/api/v1/friends` in your browser
